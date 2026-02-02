@@ -35,27 +35,49 @@ Official implementation of the paper:  **"DNNOM: A Hybrid-Sampling Optimization 
 
 ## 📂 Project Structure
 ├── figs/
+
 │   ├── classifier_para.png
+
 │   ├── comparison.png
+
 │   ├── dataset_info.png
+
 │   ├── flowchart.png
+
 │   ├── friedman1.png
+
 │   ├── friedman1_1.png
+
 │   ├── friedman2.png
+
 │   ├── friedman2_2.png
+
 │   ├── sampler_para.png
+
 │   └── visual.png
+
 ├── DNNOM_BH.py                 # main code of DNNOM
+
 ├── DNNOM_BO.py
+
 ├── NaN.py
+
 ├── RSDS.py
+
 ├── __api_experiments.py
+
 ├──api_GB.py
+
 ├── api_OBHRF.py
+
 ├── draw_BH.py
+
 ├── draw_functions_OBHRF(1).py
+
 ├── friedman.py
+
 └── requirements.txt
+
 
 ## 🛠️ Installation
 
