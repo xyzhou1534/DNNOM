@@ -12,7 +12,7 @@ Official implementation of the paper:  **"DNNOM: A Hybrid-Sampling Optimization 
 
 **DNNOM** (Dual Nonconvex and Nonsmooth Optimization Models) is a robust hybrid-sampling framework designed to tackle the joint challenge of **class imbalance** and  **label noise** . Unlike traditional heuristic resampling (like SMOTE or Random Undersampling), DNNOM treats sampling as a formal optimization problem. The flowchart for **DNNOM** is as follows.
 
-![flowchart](DNNOM/figs/flowchart.png)
+![flowchart](Code_DNNOM/figs/flowchart.png)
 
 ## ✨ Key Features
 
