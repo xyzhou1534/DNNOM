@@ -34,7 +34,17 @@ Official implementation of the paper:  **"DNNOM: A Hybrid-Sampling Optimization 
 4) Comparative experiments across dozens of public datasets and varying noise settings against multiple mainstream sampling methods and frameworks demonstrate that the proposed optimization framework outperforms existing approaches in both classification performance and robustness, while exhibiting strong generalization capabilities and classifier independence.
 
 ## 📂 Project Structure
-
+├── figs/
+│   ├── classifier_para.png
+│   ├── comparison.png
+│   ├── dataset_info.png
+│   ├── flowchart.png
+│   ├── friedman1.png
+│   ├── friedman1_1.png
+│   ├── friedman2.png
+│   ├── friedman2_2.png
+│   ├── sampler_para.png
+│   └── visual.png
 ├── DNNOM_BH.py                 # main code of DNNOM
 ├── DNNOM_BO.py
 ├── NaN.py
@@ -64,15 +74,15 @@ The performance of **DNNOM** for classification is evaluated and compare with cu
 
 **Datasets:** All actual datasets were obtained from the UCI (https://archive.ics.uci.edu/datasets) and KEEL (http://sci2s.ugr.es/keel/imbalanced.php) library. **DNNOM** focuses on binary classification tasks, thus employing the OVR method to convert multiclass datasets into binary formats. Experiments encompassed multiple datasets with varying sample sizes from small to large, dimensions from low to high and imbalance rates from low to high. Detailed dataset information is asfollows.
 
-![1770034548646](image/readme/1770034548646.png)
+![dataset_info](Code_DNNOM/figs/dataset_info.png)
 
 The parameters of the sampler and classifier used in the experiment are as follows.
 
-![1770034744796](image/readme/1770034744796.png)
+![sampler_para](Code_DNNOM/figs/sampler_para.png)
 
 Information of sampler parameters.
 
-![1770034781148](image/readme/1770034781148.png)
+![classifier_para](Code_DNNOM/figs/classifier_para.png)
 
 Information of Classifier parameters.
 
@@ -80,21 +90,21 @@ Information of Classifier parameters.
 
 - The ablation experiment for **DNNOM** is visualized as follows.
 
-  ![1770022923025](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/53264/Desktop/exp1/image/readme/1770022923025.png)
+  ![visual](Code_DNNOM/figs/visual.png)
 - The comparative trial of DNNOM is as follows: Average results based on 17 datasets, 8 classifier, 5 metrics, and 15 samplers at η ∈ {0.05, 0.15, 0.25, 0.35, 0.45} (Each numerical result is presented as"mean"±"variance". The "↑" indicates that a larger value of a metric is better. Performance improvements achieved by the DNNOM framework are highlighted in green. For each metric at different η, the worst value in a column is marked in yellow while the best value is marked in red, both colors will overlay the green.
 
-  ![1770033399613](image/readme/1770033399613.png)
+  ![comparison](Code_DNNOM/figs/comparison.png)
 - Friedman statistical experiment for DNNOM is as follows.
 
-  ![1770033748809](image/readme/1770033748809.png)
+  ![friedman1](Code_DNNOM/figs/friedman1.png)
 
-  ![1770033719273](image/readme/1770033719273.png)
+  ![friedman1_1](Code_DNNOM/figs/friedman1_1.png)
 
   The mean rank of evaluated classifiers for different metrics at η = 0.15 & 0.25. (The light red and light blue represent the original sampling algorithm and the DNNOM framework’s optimized mean ranking at η = 0.15 respectively. Similarly, the dark red and dark blue represent the mean ranking at η = 0.25 respectively.)
 
-![1770033882325](image/readme/1770033882325.png)
+![friedman2](Code_DNNOM/figs/friedman2.png)
 
-![1770033909590](image/readme/1770033909590.png)
+![friedman2_2](Code_DNNOM/figs/friedman2_2.png)
 
 The mean rank of evaluated classifiers for different metrics at η = 0.15 & 0.25. (The light yellow and light purple represent the original sampling algorithm and the DNNOM framework’s optimized mean ranking at η = 0.15 respectively. Similarly, the dark yellow and dark purple represent the mean ranking at η = 0.25 respectively.)
 
