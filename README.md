@@ -64,7 +64,7 @@ Official implementation of the paper:  **"DNNOM: A Hybrid-Sampling Optimization 
 
 ├── __api_experiments.py
 
-├──api_GB.py
+├── api_GB.py
 
 ├── draw_BH.py
 
