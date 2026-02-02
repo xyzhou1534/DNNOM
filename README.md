@@ -100,15 +100,15 @@ The performance of **DNNOM** for classification is evaluated and compare with cu
 
 **Datasets:** All actual datasets were obtained from the UCI (https://archive.ics.uci.edu/datasets) and KEEL (http://sci2s.ugr.es/keel/imbalanced.php) library. **DNNOM** focuses on binary classification tasks, thus employing the OVR method to convert multiclass datasets into binary formats. Experiments encompassed multiple datasets with varying sample sizes from small to large, dimensions from low to high and imbalance rates from low to high. Detailed dataset information is asfollows.
 
-![dataset_info](Code_DNNOM/figs/dataset_info.png)
+![dataset_info](__pycache__/figs/dataset_info.png)
 
 The parameters of the sampler and classifier used in the experiment are as follows.
 
-![sampler_para](Code_DNNOM/figs/sampler_para.png)
+![sampler_para](__pycache__/figs/sampler_para.png)
 
 Information of sampler parameters.
 
-![classifier_para](Code_DNNOM/figs/classifier_para.png)
+![classifier_para](__pycache__/figs/classifier_para.png)
 
 Information of Classifier parameters.
 
@@ -116,21 +116,21 @@ Information of Classifier parameters.
 
 - The ablation experiment for **DNNOM** is visualized as follows.
 
-  ![visual](Code_DNNOM/figs/visual.png)
+  ![visual](__pycache__/figs/visual.png)
 - The comparative trial of DNNOM is as follows: Average results based on 17 datasets, 8 classifier, 5 metrics, and 15 samplers at η ∈ {0.05, 0.15, 0.25, 0.35, 0.45} (Each numerical result is presented as"mean"±"variance". The "↑" indicates that a larger value of a metric is better. Performance improvements achieved by the DNNOM framework are highlighted in green. For each metric at different η, the worst value in a column is marked in yellow while the best value is marked in red, both colors will overlay the green.
 
-  ![comparison](Code_DNNOM/figs/comparison.png)
+  ![comparison](__pycache__/figs/comparison.png)
 - Friedman statistical experiment for DNNOM is as follows.
 
-  ![friedman1](Code_DNNOM/figs/friedman1.png)
+  ![friedman1](__pycache__/figs/friedman1.png)
 
-  ![friedman1_1](Code_DNNOM/figs/friedman1_1.png)
+  ![friedman1_1](__pycache__/figs/friedman1_1.png)
 
   The mean rank of evaluated classifiers for different metrics at η = 0.15 & 0.25. (The light red and light blue represent the original sampling algorithm and the DNNOM framework’s optimized mean ranking at η = 0.15 respectively. Similarly, the dark red and dark blue represent the mean ranking at η = 0.25 respectively.)
 
-![friedman2](Code_DNNOM/figs/friedman2.png)
+![friedman2](__pycache__/figs/friedman2.png)
 
-![friedman2_2](Code_DNNOM/figs/friedman2_2.png)
+![friedman2_2](__pycache__/figs/friedman2_2.png)
 
 The mean rank of evaluated classifiers for different metrics at η = 0.15 & 0.25. (The light yellow and light purple represent the original sampling algorithm and the DNNOM framework’s optimized mean ranking at η = 0.15 respectively. Similarly, the dark yellow and dark purple represent the mean ranking at η = 0.25 respectively.)
 
