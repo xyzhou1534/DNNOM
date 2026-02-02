@@ -56,21 +56,31 @@ Official implementation of the paper:  **"DNNOM: A Hybrid-Sampling Optimization 
 
 │      └── visual.png
 
-├── DNNOM_BH.py                 # main code of DNNOM
+├── __api_experiments.cpython-38.pyc
 
-├── NaN.py
+├── _api_DNNOM_BU.cpython-38.pyc
 
-├── RSDS.py
+├── api.cpython-38.pyc
 
-├── __api_experiments.py
+├── api_GB.cpython-38.pyc
 
-├── api_GB.py
+├── api_OBHRF.cpython-38.pyc
 
-├── draw_BH.py
+├── DNNOM_BH.cpython-38.pyc
 
-├── friedman.py
+├── DNNOM_BO.cpython-38.pyc
 
-└── requirements.txt
+├── draw_BH.cpython-38.pyc
+
+├── draw_functions_OBHRF.cpython-38.pyc
+
+├── friedman.cpython-38.pyc
+
+├── NaN.cpython-38.pyc
+
+├── requirements.txt
+
+└── RSDS.cpython-38.pyc
 
 
 ## 🛠️ Installation
