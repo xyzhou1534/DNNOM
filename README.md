@@ -58,8 +58,6 @@ Official implementation of the paper:  **"DNNOM: A Hybrid-Sampling Optimization 
 
 ├── DNNOM_BH.py                 # main code of DNNOM
 
-├── DNNOM_BO.py
-
 ├── NaN.py
 
 ├── RSDS.py
@@ -68,11 +66,7 @@ Official implementation of the paper:  **"DNNOM: A Hybrid-Sampling Optimization 
 
 ├──api_GB.py
 
-├── api_OBHRF.py
-
 ├── draw_BH.py
-
-├── draw_functions_OBHRF(1).py
 
 ├── friedman.py
 
